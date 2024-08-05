@@ -1,0 +1,164 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1.5;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+p, div{
+    font-size: 1rem;
+}
+p{
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+}
+:root{
+    --neat: #352F5B;
+    --blue: rgb(18,58,111);
+    --sharp: rgb(97,90,128);
+    --shadow1: 8px 8px 30px rgba(0, 0, 0, 0.195);
+}
+body{
+    background-color: var(--blue);
+    color: white;
+}
+/* little stylesheet ------------------------------*/
+.d-none{
+    display: none;
+}
+.d-flex{
+    display: flex;
+}
+.d-row{
+    flex-direction: row;
+}
+.d-row-reverse{
+    flex-direction: row-reverse;
+}
+.d-column{
+    flex-direction: column;
+}
+.d-column-reverse{
+    flex-direction: column-reverse;
+}
+.gap-1{
+    gap: 1px;
+}
+.gap-2{
+    gap: 2px;
+}
+.gap-3{
+    gap: 3px;
+}
+.gap-4{
+    gap: 4px;
+}
+.gap-5{
+    gap: 5px;
+}
+.gap-10{
+    gap: 10px;
+}
+.gap-15{
+    gap: 15px;
+}
+.justify-center{
+    justify-content: center;
+}
+.justify-between{
+    justify-content: space-between;
+}
+.justify-start{
+    justify-content: flex-start;
+}
+.justify-end{
+    justify-content: flex-end;
+}
+.align-center{
+    align-items: center;
+}
+.align-self-start{
+    align-self: flex-start;
+}
+.align-self-end{
+    align-self: flex-end;
+}
+.flex-wrap{
+    flex-wrap: wrap;
+}
+/* little stylesheet ------------------------------*/
+
+section.holder{
+    max-width: 600px;
+    margin: 3rem auto;
+    padding: 0 15px;
+}
+form{
+    border: 1px solid rgba(255, 255, 255, 0.295);
+    padding: 20px 15px;
+    border-radius: 2px;
+}
+input{
+    background-color: transparent;
+    margin: 10px 0;
+    width: 100%;
+    height: 40px;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    padding: 7px 11px;
+    color: white;
+    border-radius: 2px;
+    font-weight: 500;
+    background-color: rgba(255, 255, 255, 0.158);
+}
+.meridiem_display{
+    height: 200px;
+    position: relative;
+    box-shadow: var(--shadow1);
+}
+.meridiem_display .city_name{
+    z-index: 2;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.336);
+}
+.meridiem_display .city_name h2{
+    text-transform: capitalize;
+}
+.meridiem_display img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 4px;
+}
+.weather_state{
+    padding: 5px 0;
+}
+.weather_state figure{
+    height: 60px;
+    width: 70px;
+    background-color: #ffffff;
+    border-radius: 7px;
+    box-shadow: var(--shadow1);
+}
+
+/* @media query */
+@media screen and (max-width: 360px){
+    form > h1{
+        font-size: 28px !important;
+    }
+    .weather_state{
+        flex-direction: column;
+    }
+    .weather_state > div figcaption{
+        justify-content: center;
+    }
+}
+
+/* Programmed by Njokuocha Francis */
+/* Completed on Mon 5th August 2024 by 10:20pm */
+/* Face your fears and get rid of it  */
