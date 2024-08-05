@@ -3,7 +3,7 @@
 const authKey = 'AKEjOpAHjQDyHizRHkSGfK2eLotjKax3';
 // fetching city weather condition using city key 
 const fetchCityWeather = async (citykey) =>{
-    let resourceTarget = `http://dataservice.accuweather.com/currentconditions/v1/${citykey}`;
+    let resourceTarget = `https://dataservice.accuweather.com/currentconditions/v1/${citykey}`;
     let query = `?apikey=${authKey}&details=true`;
     resourceTarget += query;
     const city = await fetch(resourceTarget);
@@ -12,7 +12,7 @@ const fetchCityWeather = async (citykey) =>{
 }
 // fetching city details with "Key" as target 
 const fetchCityInfo = async (cityname) =>{
-    let resourceTarget = 'http://dataservice.accuweather.com/locations/v1/cities/search';
+    let resourceTarget = 'https://dataservice.accuweather.com/locations/v1/cities/search';
     let query = `?apikey=${authKey}&q=${cityname}`;
     resourceTarget += query;
     const cities = await fetch(resourceTarget);
